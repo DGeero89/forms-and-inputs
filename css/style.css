@@ -1,0 +1,287 @@
+/********** Resets **********/
+
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+/********** Base Styles **********/
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: Lato, sans-serif;
+	font-size: 1.6em;
+}
+
+h1, h2, h3 {
+	padding: 1em 0 1em;
+}
+
+h1 {
+	font-size: 3em;
+	font-weight: normal;
+}
+
+h2 {
+	font-size: 2.6em;
+	font-weight: normal;
+}
+
+p {
+	margin: 0 0 1em;
+}
+
+.row{
+	width: 96%;
+	max-width: 960px;
+	margin: 0 auto;
+} 
+
+.grid_2-1 {
+	width: 50%;
+	padding: 0 5% 0 0%;
+	float: left;
+}
+
+.grid_2-1 + .grid_2-1 {
+	padding: 0;
+}
+.grid_3-1 {
+	width: 33%;
+	float: left;
+	margin-right: 2%;
+}
+/********** Header Styles ***********/
+
+#header-wrap{
+	background: #6AB47B;
+	border-top: 5px solid #4C8158;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+#header a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#header a:hover {
+	background: #DAF5E0;
+}
+
+
+/********** Navigation Styles **********/
+
+#main-nav {
+    display: inline-block;
+    position: relative;
+}
+
+#main-nav li {
+	text-decoration: none;
+	list-style: none;
+	display: inline-block;
+	-webkit-transition: all .5s linear;
+    -moz-transition: all .5s linear;
+    -o-transition: all .5s linear;
+    transition: all .5s linear;
+}
+
+#main-nav li:hover {
+    background: #DAF5E0;
+    color: #4c8158;
+}
+
+#main-nav li:hover a {
+	color: #4c8158;
+}
+
+#main-nav li a {
+	text-decoration: none;
+	color: #fff;
+	padding: 15px 20px;
+    display: inline-block;
+}
+
+/********** Main Content Styles **********/
+
+.page-title-wrap{
+	background: #DAF5E0;
+}
+
+#page-title{
+	text-align: center;
+	padding: 5%;
+	color: #4c8158;
+	font-family: Raleway;
+    font-weight: 300;
+} 
+#site-title {
+	font-size: 2em;
+	color: #fff;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	display: inline-block;
+	padding: 5px;
+}
+
+#main-wrap{
+	background: url(../images/landscape-2.jpg) no-repeat center center fixed;
+	min-height: 100vh;
+	padding: 0 0 5%;
+}
+
+#content-home{
+	padding-top: 10%;
+
+}
+
+#content {
+	margin-top: 5%;
+	padding: 2%;
+	background: rgba(255,255,255,.6);
+}
+
+#developer {
+	text-align: center;
+}
+
+#developer h1, #developer h2 {
+	padding: 0;
+}
+
+#developer h1{
+	font-family: 'Raleway', sans-serif;
+	font-weight: normal;
+	font-size: 6em;
+	color: #fff;
+
+}
+
+#developer h2{
+	font-family: Lato, sans-serif;
+	font-size: 2.2em;
+    color: #DAF5E0;
+    margin-bottom: 30px;
+}
+
+#quote {
+	background: #2F3430;
+	background: rgba(47, 52, 48, .8);
+	background: -moz-linear-gradient(top,  rgba(47,52,48,1) 0%, rgba(47,52,48,0.71) 52%, rgba(0,0,0,0) 100%); 
+	background: -webkit-linear-gradient(top,  rgba(47,52,48,1) 0%,rgba(47,52,48,0.71) 52%,rgba(0,0,0,0) 100%); 
+	background: linear-gradient(to bottom,  rgba(47,52,48,1) 0%,rgba(47,52,48,0.71) 52%,rgba(0,0,0,0) 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2f3430', endColorstr='#00000000',GradientType=0 ); 
+	font-size: 1.6em;
+	text-align: center;
+	color: #fff;
+	line-height: 1.618em;
+	padding: 30px;
+	font-family: 'Droid Serif', Serif;
+}
+
+/********** Module Styles **********/
+
+.module{
+	background: #fff;
+	border: 1px solid #DAF5E0;
+	padding: 12% 0 12%;
+	text-align: center;
+	border-radius: 5px;
+	position: relative;
+	box-shadow: 2px 2px 22px #e8e8e8;
+	-webkit-transition: all 3s linear;
+	-moz-transition: all 3s linear;
+	-ms-transition: all 3s linear;
+	-o-transition: all 3s linear;
+	transition: all 3s linear;
+}
+
+.module h2 {
+	color: #4C8158;
+	font-size: 1.6em;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.component-view{    
+	display: block;
+	position: absolute;
+	opacity: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(76, 129, 88, .7);
+    color: #fff;
+    font-size: 2em;
+    border-radius: 4px;
+    border-bottom: 5px solid #4C8158;
+    box-shadow: 2px 2px 22px #DAF5E0;
+    -webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+}
+
+.module:hover h2{
+	color: transparent;
+}
+
+.module:hover .component-view {
+	opacity: 1;
+}
+
+.component-view a {
+	display: block;
+	padding: 20% 0 0;
+	height: 100%;
+	text-decoration: none;
+	color: #fff;
+}
+
+/********** Form Styles **********/
+
+.form-wrap {
+	max-width: 450px;
+	width: 96%;
+	margin: 0 auto;
+}
+
+/********** Footer Styles **********/
+
+#footer-wrap {
+	background: #DAF5E0;
+	text-align: center;
+	padding: 20px 0 20px;  
+}
