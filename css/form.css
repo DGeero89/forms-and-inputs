@@ -27,6 +27,7 @@ input:focus
 
 #signup .form-wrap {
 	max-width: 450px;
+	background: #ffffff;
 	width: 96%;
 	margin: 0 auto;
 	padding: 5%;

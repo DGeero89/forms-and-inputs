@@ -155,7 +155,7 @@ p {
 }
 
 #main-wrap{
-	background: url(../images/landscape-2.jpg) no-repeat center center fixed;
+	background: url(../../images/landscape-2.jpg) no-repeat center center fixed;
 	min-height: 100vh;
 	padding: 0 0 5%;
 }
