@@ -17,8 +17,8 @@ a {
 
 .button {
 	font: inherit;
-	font-weight: bold;
-	text-transform: uppercase;
+	font-weight: normal;
+	text-transform: capitalize;
 	display: inline-block;
 	cursor: pointer;
 	padding: .3em 1em;
@@ -67,6 +67,6 @@ a {
 }
 
 .button-green {
-	background: #4C8158;
+	background: #6AB47B;
 	color: #ffffff;
 }

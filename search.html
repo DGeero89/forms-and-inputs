@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>David Gierman - Modern Frontend Developer</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/button.css">
+	<link rel="stylesheet" href="css/form.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato|Raleway:300,400|Roboto:300,400' rel='stylesheet'>
+	<script src="https://use.fontawesome.com/c3e06da910.js"></script>
+</head>
+<body>
+	<div id="header-wrap">
+		<header id="header" class="row clearfix">
+			<nav id="main-nav" role="navigation">
+					<ul>
+						<li><a href="/"><i class="fa fa-angle-double-left" aria-hidden="true"></i> Go Back</a></li>
+					</ul>
+				</nav>
+		</header>
+	</div>
+	<div id="main-wrap">
+		<section class="page-title-wrap">
+			<div class="row">
+				<h1 id="page-title">Signup Form</h1>
+			</div>
+		</section>
+		<main id="content" class="row">
+			<div id="search">
+				<div class="form-wrap">
+					<form action="" method="POST" role="form" id="search-form">	
+						<legend><i class="fa fa-gamepad" aria-hidden="true"></i> Video Game Search</legend>
+						<fieldset class="form-group">
+							<label for="categories">Search for Games</label>	
+							<input type="text" class="form-control" id="search-box" name="search" placeholder="Search for...">
+							<label for="categories">Game Categories</label>
+							<select name="categories" class="form-control" id="categories">
+								<option value="all games">All Games</option>
+								<option value="action">Action</option>
+								<option value="fighting">Fighting</option>
+								<option value="role playing">Role Playing</option>
+								<option value="Shooter">Shooter</option>
+								<option value="Platformer">Platformer</option>
+								<option value="Strategy">Strategy</option>
+								<option value="Party">Part</option>
+							</select>			
+						</fieldset>
+						<button type="submit" class="button button-lg button-green">Sign Up</button>
+					</form>
+				</div>
+			</div>
+		</main>
+	</div>
+	<div id="footer-wrap">
+		<footer>
+		<p>Copyright &copy; 2016</p>
+	</footer>
+</body>
+</html>
