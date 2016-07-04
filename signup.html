@@ -8,7 +8,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Lato|Raleway:300,400|Roboto:300,400' rel='stylesheet'>
 	<script src="https://use.fontawesome.com/c3e06da910.js"></script>
 </head>
-<body>
+<body id="signup">
 	<div id="header-wrap">
 		<header id="header" class="row clearfix">
 			<nav id="main-nav" role="navigation">
@@ -19,34 +19,31 @@
 		</header>
 	</div>
 	<div id="main-wrap">
-		
 		<main id="content" class="row">
-			<div id="signup">
-				<div class="form-wrap">
-					<form action="" method="POST" role="form" id="signup-form">	
-						<legend><i class="fa fa-rocket" aria-hidden="true"></i> Signup Now</legend>
-						<div class="form-group clearfix">
-							<div class="grid_2-1">
-								<label for="first_name">First Name</label>
-								<input type="text" class="form-control" id="first_name" name="first_name" placeholder="First Name...">
-							</div>
-							<div class="grid_2-1">
-								<label for="last_name">Last Name</label>
-								<input type="text" class="form-control" id="last_name" name="last_name" placeholder="Last Name...">
-							</div>
+			<div class="form-wrap">
+				<form action="" method="POST" role="form" id="signup-form">	
+					<legend><i class="fa fa-rocket" aria-hidden="true"></i> Signup Now</legend>
+					<div class="form-group clearfix">
+						<div class="grid_2-1">
+							<label for="first_name">First Name</label>
+							<input type="text" class="form-control" id="first_name" name="first_name" placeholder="First Name...">
 						</div>
-						<div class="form-group">
-							<label for="email">Email: *</label>
-							<input type="email" class="form-control" name="email" id="email" placeholder="email@domain.com">
-							<label for="dob">Date of Birth *</label>
-							<input type="date" class="form-control" name="dob" id="dob" >
-							<label for="password">Password: *</label>
-							<input type="password" class="form-control" name="password" id="password" placeholder="*********">
-							<div class="requirement">*Required Field</div>
-							<button type="submit" class="button button-lg button-green">Sign Up</button>
+						<div class="grid_2-1">
+							<label for="last_name">Last Name</label>
+							<input type="text" class="form-control" id="last_name" name="last_name" placeholder="Last Name...">
 						</div>
-					</form>
-				</div>
+					</div>
+					<div class="form-group">
+						<label for="email">Email: *</label>
+						<input type="email" class="form-control" name="email" id="email" placeholder="email@domain.com">
+						<label for="dob">Date of Birth *</label>
+						<input type="date" class="form-control" name="dob" id="dob" >
+						<label for="password">Password: *</label>
+						<input type="password" class="form-control" name="password" id="password" placeholder="*********">
+						<div class="requirement">*Required Field</div>
+						<button type="submit" class="button button-lg button-green">Sign Up</button>
+					</div>
+				</form>
 			</div>
 		</main>
 	</div>
