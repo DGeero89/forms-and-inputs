@@ -24,9 +24,7 @@ select:focus
 
 .form-wrap {
 	font-family: "Raleway", sans-serif;
-	border: 1px dashed #ccc;
-	border-left: 5px solid #4C8158;
-	border-right: 5px solid #4C8158;
+	border: 1px solid #ccc;
 	border-radius: 5px;
 	background: #ffffff;
 	width: 96%;
@@ -39,7 +37,7 @@ select:focus
 	padding: 1em;
 	margin: 1em 0 1em;
 	border: 1px solid #cccccc;
-	box-shadow: 1px 1px 1px #ccc;
+	
 	font-size: 1em;
 }
 
@@ -62,9 +60,7 @@ select:focus
 
 legend {
 	font-size: 2em;
-	color: #4C8158;
 	padding: 0 0 5%;
-	margin: 0 0 5%
 	margin: 0 auto;
 }
 
@@ -101,11 +97,33 @@ legend {
 	text-indent: 40px;
 }
 
+#search .form-wrap {
+	background: #ebfdd4;
+	max-width: 450px;
+	border-radius: 0;
+	border:none;
+	box-shadow: 0px 1px 10px #333;
+	padding: 0;
+}
+
+#search .form-title-wrap {
+	background: #6AB47B;
+	color: #fff;
+	text-align: center;
+}
+
+#search h1 {
+	font-size: 2em;
+}
+
 #search-box:focus {
 	background: url(../images/search.png) no-repeat 15px 15px;
 	background-size: 20px 20px;
 	text-indent: 40px;
 	color: black;
+}
+#search-form {
+	padding: 5%;
 }
 
 #search-form select {
@@ -119,9 +137,15 @@ legend {
 
 #questionnaire .form-wrap {
 	max-width: 700px;
+	background: #606c88; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #606c88 , #3f4c6b); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #606c88 , #3f4c6b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */        
 }
 
-input[type="radio"] {
+#questionnaire-form legend {
+	color: #fff;
+}
+#questionnaire input[type="radio"] {
   border: 0; 
   clip: rect(0 0 0 0); 
   height: 1px; 
@@ -143,23 +167,27 @@ input[type="radio"] {
   display: block;
 }
 
-input[type="radio"] + span:before {
-  content: '';
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  vertical-align: -.1em;
-  border-radius: 1em;
-  box-shadow: 0 0 0 2px #bbb;
-  margin-right: 0.75em;
-  transition: 0.5s ease all;
-  background: #DAF5E0;
+#questionnaire span:hover {
+	color: #fff;
+	transition: 0.5s ease all;
 }
 
-input[type="radio"]:checked + span:before {
+#questionnaire input[type="radio"] + span:before {
+	content: '';
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	vertical-align: -.1em;
+	border-radius: 1em;
+	margin-right: 0.75em;
+	transition: 0.5s ease all;
+	background: #fff;
+}
+
+#questionnaire input[type="radio"]:hover + span:before, 
+#questionnaire input[type="radio"]:checked + span:before {
 	background: orange url(../images/basketball.png) no-repeat center;
 	background-size: cover;
-  	box-shadow: none;
   	vertical-align: -.1em;
   	-webkit-animation: bounce 1s;
     -webkit-animation-iteration-count: 1;
@@ -177,8 +205,122 @@ input[type="radio"]:checked + span:before {
     }
 }
 
-input[type="radio"]:focus + span:after {
-  content: "\f0a5";
-  font-family: FontAwesome;
-  margin-left: 10px;
+/********** Login Form *********/
+
+
+#login .form-wrap {
+	background: repeating-linear-gradient(
+	  45deg,
+	  #333,
+	  #222 5px,
+	  #333 5px,
+	  #333 10px
+	);
+	max-width: 400px;
 }
+
+#login legend {
+	color: #fff;
+}
+
+.login-label {
+	width: 100%;
+	display: block;
+	cursor: pointer;
+	position: relative;
+}
+
+.login-label span {
+	position: absolute;
+	display: block;
+	color: transparent;
+	left: 10px;
+	top: 10px;
+	opacity: .8
+	-webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+.login-label i {
+	color: #81DB95;
+}
+
+.login-label input {
+	 width: 100%;
+	 padding: 10px 10px 10px 30px;
+	 display: block;
+	 border: 1px solid #EDEDED;
+	 border-radius: 4px;
+	 transition: 0.2s ease-out;
+	 color: #fff;
+}
+
+.login-label input:focus {
+	padding: 10px 5px 10px 10px;
+	outline: 0;
+	border-color: #1ab188;
+}
+
+.login-label input:focus + span {
+	color: color: #d4d4d4;
+	-webkit-transform: translateY(40px);
+    transform: translateY(40px);
+    color: #81DB95;
+    font-size: .8em;
+}
+
+#login .form-control {
+	margin: 2em 0 2em;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+#login .form-control::-webkit-input-placeholder { 
+	color: #a1a1a1;
+} 
+
+#login .form-control::-moz-placeholder { 
+	color: #a1a1a1;
+}  
+
+input[type="checkbox"] + label {
+	color: #fff;
+}
+input[type="checkbox"] + label:before {
+  content: "\f096";
+  font-family: FontAwesome;
+  display: inline-block;
+  margin: 0 5px 10px 0px;
+  padding: 0;
+  width: 20px;
+}
+
+input[type="checkbox"]:checked + label:before {
+  background: transparent;
+  color: #81DB95;
+  content: "\f046";
+  font-family: FontAwesome;
+  /*text-align: center;*/
+}
+input[type="checkbox"]:checked + label:after {
+  font-weight: bold;
+}
+
+#login .form-wrap a {
+	display: block;
+	text-align: center;
+	margin: 10px 0 0;
+	color: #ccc;
+	font-size: .8em;
+}
+
+#login .form-control:-ms-input-placeholder { 
+	color: #a1a1a1;
+}  
+
+#login .form-control:-moz-placeholder { 
+	color: #a1a1a1;
+} 
+

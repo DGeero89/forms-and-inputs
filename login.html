@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>David Gierman - Modern Frontend Developer</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/button.css">
+	<link rel="stylesheet" href="css/form.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato|Raleway:300,400|Roboto:300,400' rel='stylesheet'>
+	<script src="https://use.fontawesome.com/c3e06da910.js"></script>
+</head>
+<body id="login">
+	<div id="header-wrap">
+		<header id="header" class="row clearfix">
+			<nav id="main-nav" role="navigation">
+					<ul>
+						<li><a href="/"><i class="fa fa-angle-double-left" aria-hidden="true"></i> Go Back</a></li>
+					</ul>
+				</nav>
+		</header>
+	</div>
+	<div id="main-wrap">
+		<main id="content" class="row">
+			<div class="form-wrap">
+				<form action="" method="POST" role="form" id="login-form">	
+					<legend>Login</legend>
+					<fieldset class="form-group">	
+						<label for="username" class="login-label">
+						<input type="text" class="form-control" id="username" name="user" placeholder="User" required="">
+							<span><i class="fa fa-user" aria-hidden="true"></i> User ID</span>
+						</label>	
+							
+						<label for="password" class="login-label">
+							<input type="password" class="form-control" name="password" id="password" placeholder="*******" required="">
+							<span><i class="fa fa-key" aria-hidden="true"></i> Password</span>
+						</label>
+						
+						<input type="checkbox" id="remember" name="rememberme">
+          				<label for="remember">Remember Me</label>
+									
+					</fieldset>
+					<button type="submit" class="button button-md button-green">Login</button>
+				</form>
+				<a href="#">Forgot Password?</a>
+			</div>		
+		</main>
+	</div>
+	<div id="footer-wrap">
+		<footer>
+		<p>Copyright &copy; 2016</p>
+	</footer>
+</body>
+</html>
