@@ -27,11 +27,13 @@ select:focus
 	border: 1px solid #ccc;
 	border-radius: 5px;
 	background: #ffffff;
-	width: 96%;
+	padding: 0 0 5%;
 	margin: 0 auto;
-	padding: 5%;
 }
 
+form {
+	padding: 5%;
+}
 .form-control{
 	width: 100%;
 	padding: 1em;
@@ -40,6 +42,7 @@ select:focus
 	
 	font-size: 1em;
 }
+
 
 .form-control:focus {
 	border: 1px solid #365C3F;
@@ -146,25 +149,25 @@ legend {
 	color: #fff;
 }
 #questionnaire input[type="radio"] {
-  border: 0; 
-  clip: rect(0 0 0 0); 
-  height: 1px; 
-  margin: -1px; 
-  overflow: hidden; 
-  padding: 0; 
-  position: absolute; 
-  width: 1px;
+	border: 0; 
+	clip: rect(0 0 0 0); 
+	height: 1px; 
+	margin: -1px; 
+	overflow: hidden; 
+	padding: 0; 
+	position: absolute; 
+	width: 1px;
 }
 
 #questionnaire label {
-  display: block;
-  cursor: pointer;
-  line-height: 2.5;
-  font-size: 1.5em;
+	display: block;
+	cursor: pointer;
+	line-height: 2.5;
+	font-size: 1.5em;
 }
 
 #questionnaire span {
-  display: block;
+	display: block;
 }
 
 #questionnaire span:hover {
@@ -246,13 +249,13 @@ legend {
 }
 
 .login-label input {
-	 width: 100%;
-	 padding: 10px 10px 10px 30px;
-	 display: block;
-	 border: 1px solid #EDEDED;
-	 border-radius: 4px;
-	 transition: 0.2s ease-out;
-	 color: #fff;
+	width: 100%;
+    padding: 10px 10px 10px 30px;
+	display: block;
+	border: 1px solid #EDEDED;
+	border-radius: 4px;
+	transition: 0.2s ease-out;
+	color: #fff;
 }
 
 .login-label input:focus {
@@ -263,8 +266,8 @@ legend {
 
 .login-label input:focus + span {
 	color: color: #d4d4d4;
-	-webkit-transform: translateY(40px);
-    transform: translateY(40px);
+	-webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
     color: #81DB95;
     font-size: .8em;
 }
@@ -274,7 +277,7 @@ legend {
 }
 
 input[type="checkbox"] {
-  display: none;
+	display: none;
 }
 
 #login .form-control::-webkit-input-placeholder { 
@@ -289,21 +292,22 @@ input[type="checkbox"] + label {
 	color: #fff;
 }
 input[type="checkbox"] + label:before {
-  content: "\f096";
-  font-family: FontAwesome;
-  display: inline-block;
-  margin: 0 5px 10px 0px;
-  padding: 0;
-  width: 20px;
+	content: "\f096";
+	font-family: FontAwesome;
+	display: inline-block;
+	margin: 0 5px 10px 0px;
+	padding: 0;
+	width: 20px;
 }
 
 input[type="checkbox"]:checked + label:before {
-  background: transparent;
-  color: #81DB95;
-  content: "\f046";
-  font-family: FontAwesome;
-  /*text-align: center;*/
+	background: transparent;
+	color: #81DB95;
+	content: "\f046";
+	font-family: FontAwesome;
+  
 }
+
 input[type="checkbox"]:checked + label:after {
   font-weight: bold;
 }
@@ -324,3 +328,189 @@ input[type="checkbox"]:checked + label:after {
 	color: #a1a1a1;
 } 
 
+/***** Color Builder *******/
+
+#color-builder .form-wrap {
+	width: 96%;
+	max-width: 600px;
+	text-align: center;
+}
+
+#color-builder .form-control {
+	margin: 0;
+}
+
+#color-builder .form-title-wrap {
+	background: repeating-linear-gradient(
+		to right,
+		rgba(255, 0, 0, .7) 0%,
+        rgba(255, 255, 0, .7) 15%,
+        rgba(0, 255, 0, .7) 30%,
+        rgba(0, 255, 255, .7) 45%,
+        rgba(0, 0, 255, .7) 60%,
+        rgba(255, 0, 255, .7) 80%,
+        rgba(255, 0, 0, .7) 100%);
+	);
+	text-align: center;
+	font-weight: bolder;
+}
+
+#color-builder input[type=range] {
+	-webkit-appearance: none; 
+	width: 100%; 
+	background: transparent; 
+	border:none;
+}
+
+#color-builder input[type=range]:focus {
+	outline: none; 
+	border:none;
+}
+
+#color-builder-form input[type="range"]::-webkit-slider-runnable-track {
+	width: 100%;
+	height: 8px;
+	cursor: pointer;
+	box-shadow: 0px 2px 4px #333, 0px 0px 4px #0d0d0d;
+	background: #3071a9;
+	border-radius: 10em;
+}
+
+#color-builder input[type=range]::-webkit-slider-thumb {
+	height: 20px;
+	width: 20px;
+	border-radius: 100%;
+	background: rgb(125,126,125); 
+	background: -moz-radial-gradient(center, ellipse cover,  rgba(125,126,125,1) 0%, rgba(14,14,14,1) 100%); 
+	background: -webkit-radial-gradient(center, ellipse cover,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); 
+	background: radial-gradient(ellipse at center,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=1 ); 
+	cursor: pointer;
+	-webkit-appearance: none;
+	margin-top: -5px;
+}
+
+#color-builder-form input[type="range"]::-moz-range-track {
+	width: 100%;
+	height: 8px;
+	cursor: pointer;
+	box-shadow: 0px 2px 4px #333, 0px 0px 4px #0d0d0d;
+	background: #3071a9;
+	border-radius: 10em;
+}
+
+#color-builder input[type=range]::-moz-range-thumb {
+	height: 20px;
+	width: 20px;
+	border-radius: 100%;
+	background: rgb(125,126,125); 
+	background: -moz-radial-gradient(center, ellipse cover,  rgba(125,126,125,1) 0%, rgba(14,14,14,1) 100%); 
+	background: -webkit-radial-gradient(center, ellipse cover,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%);
+	background: radial-gradient(ellipse at center,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=1 ); 
+	cursor: pointer;
+	-webkit-appearance: none;
+	margin-top: -5px;
+}
+
+#color-builder-form input[type="range"]::-ms-track {
+	width: 100%;
+	height: 8px;
+	cursor: pointer;
+	box-shadow: 0px 2px 4px #333, 0px 0px 4px #0d0d0d;
+	background: #3071a9;
+	border-radius: 10em;
+}
+
+#color-builder input[type=range]::-ms-thumb {
+	height: 20px;
+	width: 20px;
+	border-radius: 100%;
+	background: rgb(125,126,125); 
+	background: -moz-radial-gradient(center, ellipse cover,  rgba(125,126,125,1) 0%, rgba(14,14,14,1) 100%); 
+	background: -webkit-radial-gradient(center, ellipse cover,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); 
+	background: radial-gradient(ellipse at center,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=1 ); 
+	cursor: pointer;
+	-webkit-appearance: none;
+	margin-top: -5px;
+}
+
+#color-builder-form input[type="range"].red::-webkit-slider-runnable-track {
+	background-image: linear-gradient(90deg, #FFFFFF, #FF0000);
+}
+
+#color-builder-form input[type="range"].green::-webkit-slider-runnable-track {
+	background-image: linear-gradient(
+		to right, 
+		#ffffff, 
+		#00ff00);
+}
+#color-builder-form input[type="range"].blue::-webkit-slider-runnable-track {
+	background-image: linear-gradient(
+		to right, 
+		#ffffff, 
+		#0000ff);
+}
+#color-builder-form input[type="range"].alpha::-webkit-slider-runnable-track {
+	background-image: linear-gradient(
+		to right, 
+		#ffffff, 
+		#000000);
+}
+
+#color-builder textarea {
+	height: 225px;
+}
+
+/**** Shipping and Billing Form *****/
+#shipping-billing .form-wrap {
+	border: 5px solid pink;
+}
+
+#shipping-billing fieldset {
+	border: 1px dotted #ccc;
+	border-radius: 5px;
+	padding: 10px;
+	margin-bottom: 25px;
+}
+
+#shipping-billing legend {
+	padding: 0;
+	margin: 0 0 15px;
+}
+
+#shipping-billing .form-title-wrap {
+	background: repeating-linear-gradient(
+	    -55deg,
+	    purple,
+	 	purple 10px,
+	  	#4b026f 10px, 
+	  	#4b026f 20px
+	);
+	color: #fff;
+	text-align: center;
+}
+
+#shipping-billing input[type="text"] {
+	border-radius: 5px;
+}
+
+#shipping-billing input[type="text"]:focus {
+	border: 2px solid #6441A5;
+	border-radius: 5px;
+}
+#shipping-billing input[type="checkbox"] + label {
+	color: #000;
+}
+
+#shipping-billing .button {
+	display: block;
+	width: auto;
+	margin: 0 auto;
+}
+
+#shipping-billing input[type="checkbox"]:checked + label:before {
+	background: transparent;
+	color: #6441A5;
+}
