@@ -514,3 +514,90 @@ input[type="checkbox"]:checked + label:after {
 	background: transparent;
 	color: #6441A5;
 }
+
+/**** Scheduling Form ****/
+
+#schedule .form-wrap {
+	max-width: 700px;
+	border: 5px solid #0ECEF6;
+	background: #E0EAFC; 
+	background: -webkit-linear-gradient(
+		to bottom, 
+		#E0EAFC , 
+		#CFDEF3
+		); 
+	background: linear-gradient(
+		to bottom, 
+		#E0EAFC, 
+		#CFDEF3
+		);
+}
+
+#schedule .form-control {
+	height: 50px;
+	border: 1px solid #333;
+	border-radius: 5px;
+	margin: 15px 0 25px;
+}
+
+#schedule .form-control:focus {
+	border: 2px solid #0ECEF6;
+}
+
+#schedule .form-title-wrap {
+	text-align: center;
+	background: #2980b9; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #2980b9 , #2c3e50); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #2980b9 , #2c3e50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+}
+
+/****** Payment Form *******/
+
+#payment .form-wrap {
+	max-width: 450px;
+	border: 2px solid #003B7F;
+	
+	border-bottom: 5px solid #003B7F;
+	border-radius: 5px 5px 0 0;
+}
+
+#payment .form-control {
+	height: 50px;
+	border: 1px solid #333;
+	border-radius: 5px;
+	margin: 15px 0 25px;
+}
+
+#payment .form-title-wrap {
+	font-size: .8rem;
+	text-align: center;
+	background: #0CACE8;
+	color: #fff;
+}
+
+#payment label {
+	font-size: 1.2em;
+	color: #001E40;
+	font-weight: bold;
+}
+
+#payment .form-control:focus {
+	border: 2px solid #0077FF;
+}
+
+.fa-cc-visa {
+	color: #0157a2;
+}
+
+.fa-cc-amex {
+	color: #007bc1;
+}
+
+.fa-cc-mastercard {
+	color: #0a3a82;
+}
+
+.fa-cc-discover {
+	color: #f68121;
+}

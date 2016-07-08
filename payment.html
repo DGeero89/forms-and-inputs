@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>David Gierman - Modern Frontend Developer</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/button.css">
+	<link rel="stylesheet" href="css/form.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato|Raleway:300,400|Roboto:300,400' rel='stylesheet'>
+	<script src="https://use.fontawesome.com/c3e06da910.js"></script>
+</head>
+<body id="payment">
+	<div id="header-wrap">
+		<header id="header" class="row clearfix">
+			<nav id="main-nav" role="navigation">
+					<ul>
+						<li><a href="/"><i class="fa fa-angle-double-left" aria-hidden="true"></i> Go Back</a></li>
+					</ul>
+				</nav>
+		</header>
+	</div>
+	<div id="main-wrap">
+		<main id="content" class="row">
+			<div class="form-wrap">
+				<div class="form-title-wrap">
+					<h1>
+						<i class="fa fa-credit-card" aria-hidden="true"></i> Make Payment
+					</h1>
+				</div>
+				<form action="" method="POST" role="form" id="payment-form">
+					<fieldset>
+					<div class="form-group clearfix">
+						<label for="fullName">Full Name (as it appears on card)*</label>
+						<input type="text" class="form-control" id="fullName" name="paymentFullName" placeholder="Luke Skywalker" required>
+					</div>
+					<div class="form-group">
+						<label for="cardNum">Credit Card Number*  <i class="fa fa-cc-visa fa-lg" aria-hidden="true"></i> <i class="fa fa-cc-amex fa-lg" aria-hidden="true"> </i>
+ <i class="fa fa-cc-mastercard fa-lg" aria-hidden="true"> </i> <i class="fa fa-cc-discover fa-lg" aria-hidden="true"></i>
+</label>
+						<input type="text" class="form-control" id="cardNum" name="paymentCardNum" placeholder="**** **** **** ****" maxlength="19" required>
+					</div>
+					<div class="form-group">
+						<div class="grid_3-1">
+							<label for="expirationMonth">Month</label>
+							<select class="form-control" name="paymentExpirationMonth" id="expirationMonth" required>
+								<option disabled selected value> --- </option>
+								<option value="01">01</option>
+								<option value="02">02</option>
+								<option value="03">03</option>
+								<option value="04">04</option>
+								<option value="05">05</option>
+								<option value="06">06</option>
+								<option value="07">07</option>
+								<option value="08">08</option>
+								<option value="09">09</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+								<option value="12">12</option>
+							</select>
+						</div>
+						<div class="grid_3-1">
+							<label for="expirationYear">Year*</label>
+							<select class="form-control" name="paymentExpirationYear" id="expirationYear" required>
+								<option disabled selected value> --- </option>
+								<option value="2016">2016</option>
+						    	<option value="2017">2017</option>
+						    	<option value="2018">2018</option>
+						    	<option value="2019">2019</option>
+						    	<option value="2020">2020</option>
+						    	<option value="2021">2021</option>
+						    	<option value="2022">2022</option>
+						    	<option value="2023">2023</option>
+						    	<option value="2024">2024</option>
+						    	<option value="2025">2025</option>
+						    	<option value="2026">2026</option>
+						    	<option value="2027">2027</option>
+						    	<option value="2028">2028</option>
+						    	<option value="2029">2029</option>
+						    	<option value="2030">2030</option>
+						    	<option value="2031">2031</option>
+							</select>
+						</div>
+						<div class="grid_3-1">
+							<label for="csv">CSV</label>
+							<input type="text" class="form-control" id="csv" name="paymentCSV" placeholder="***" required>
+						</div>
+						</div>
+					<button type="submit" class="button button-lg button-blue">Pay Now</button>
+					</fieldset>	
+				</form>
+			</div>
+		</main>
+	</div>
+	<div id="footer-wrap">
+		<footer>
+		<p>Copyright &copy; 2016</p>
+	</footer>
+</body>
+</html>

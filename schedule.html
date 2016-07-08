@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>David Gierman - Modern Frontend Developer</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/button.css">
+	<link rel="stylesheet" href="css/form.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato|Raleway:300,400|Roboto:300,400' rel='stylesheet'>
+	<script src="https://use.fontawesome.com/c3e06da910.js"></script>
+</head>
+<body id="schedule">
+	<div id="header-wrap">
+		<header id="header" class="row clearfix">
+			<nav id="main-nav" role="navigation">
+					<ul>
+						<li><a href="/"><i class="fa fa-angle-double-left" aria-hidden="true"></i> Go Back</a></li>
+					</ul>
+				</nav>
+		</header>
+	</div>
+	<div id="main-wrap">
+		<main id="content" class="row">
+			<div class="form-wrap">
+				<div class="form-title-wrap">
+					<h1>
+						<i class="fa fa-calendar" aria-hidden="true"></i> Schedule Appointment
+					</h1>
+				</div>
+				<form action="" method="POST" role="form" id="schedule-form">
+					<fieldset>
+					<div class="form-group clearfix">
+						<div class="grid_2-1">
+							<label for="first_name">First Name*</label>
+							<input type="text" class="form-control" id="first_name" name="first_name" placeholder="John" required>
+						</div>
+						<div class="grid_2-1">
+							<label for="last_name">Last Name*</label>
+							<input type="text" class="form-control" id="last_name" name="last_name" placeholder="Doe" required>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="grid_2-1">
+							<label for="email">Email*</label>
+							<input type="email" class="form-control" name="email" id="email" placeholder="email@domain.com" required>
+						</div>
+						<div class="grid_2-1">
+							<label for="email">Phone*</label>
+							<input type="tel" class="form-control" name="email" id="email" placeholder="(555)555-5555" required>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="grid_3-1">
+							<label for="scheduleDate">Date*</label>
+							<input type="date" class="form-control" name="date" id="scheduleDate" required>
+						</div>
+						<div class="grid_3-1">
+							<label for="scheduleTime">Time*</label>
+							<input type="time" class="form-control" name="date" id="scheduleTime" required>
+						</div>
+						<div class="grid_3-1">
+							<label for="scheduleTimeZone">Date*</label>
+							<select class="form-control" name="date" id="scheduleTimeZone" required>
+								<option disabled selected value> -- Select Timezone -- </option>
+								<option value="-12.0">(GMT -12:00) Eniwetok, Kwajalein</option>
+						    	<option value="-11.0">(GMT -11:00) Midway Island, Samoa</option>
+						    	<option value="-10.0">(GMT -10:00) Hawaii</option>
+						    	<option value="-9.0">(GMT -9:00) Alaska</option>
+						    	<option value="-8.0">(GMT -8:00) Pacific Time (US &amp; Canada)</option>
+						    	<option value="-7.0">(GMT -7:00) Mountain Time (US &amp; Canada)</option>
+						    	<option value="-6.0">(GMT -6:00) Central Time (US &amp; Canada), Mexico City</option>
+						    	<option value="-5.0">(GMT -5:00) Eastern Time (US &amp; Canada), Bogota, Lima</option>
+						    	<option value="-4.0">(GMT -4:00) Atlantic Time (Canada), Caracas, La Paz</option>
+						    	<option value="-3.5">(GMT -3:30) Newfoundland</option>
+						    	<option value="-3.0">(GMT -3:00) Brazil, Buenos Aires, Georgetown</option>
+						    	<option value="-2.0">(GMT -2:00) Mid-Atlantic</option>
+						    	<option value="-1.0">(GMT -1:00 hour) Azores, Cape Verde Islands</option>
+						    	<option value="0.0">(GMT) Western Europe Time, London, Lisbon, Casablanca</option>
+						    	<option value="1.0">(GMT +1:00 hour) Brussels, Copenhagen, Madrid, Paris</option>
+						    	<option value="2.0">(GMT +2:00) Kaliningrad, South Africa</option>
+						    	<option value="3.0">(GMT +3:00) Baghdad, Riyadh, Moscow, St. Petersburg</option>
+						    	<option value="3.5">(GMT +3:30) Tehran</option>
+						    	<option value="4.0">(GMT +4:00) Abu Dhabi, Muscat, Baku, Tbilisi</option>
+						    	<option value="4.5">(GMT +4:30) Kabul</option>
+						    	<option value="5.0">(GMT +5:00) Ekaterinburg, Islamabad, Karachi, Tashkent</option>
+						    	<option value="5.5">(GMT +5:30) Bombay, Calcutta, Madras, New Delhi</option>
+						    	<option value="5.75">(GMT +5:45) Kathmandu</option>
+						    	<option value="6.0">(GMT +6:00) Almaty, Dhaka, Colombo</option>
+						    	<option value="7.0">(GMT +7:00) Bangkok, Hanoi, Jakarta</option>
+						    	<option value="8.0">(GMT +8:00) Beijing, Perth, Singapore, Hong Kong</option>
+						    	<option value="9.0">(GMT +9:00) Tokyo, Seoul, Osaka, Sapporo, Yakutsk</option>
+						    	<option value="9.5">(GMT +9:30) Adelaide, Darwin</option>
+						    	<option value="10.0">(GMT +10:00) Eastern Australia, Guam, Vladivostok</option>
+						    	<option value="11.0">(GMT +11:00) Magadan, Solomon Islands, New Caledonia</option>
+						    	<option value="12.0">(GMT +12:00) Auckland, Wellington, Fiji, Kamchatka</option>
+							</select>
+						</div>
+						</div>
+					<button type="submit" class="button button-lg button-green">Schedule</button>
+					</fieldset>	
+				</form>
+			</div>
+		</main>
+	</div>
+	<div id="footer-wrap">
+		<footer>
+		<p>Copyright &copy; 2016</p>
+	</footer>
+</body>
+</html>
