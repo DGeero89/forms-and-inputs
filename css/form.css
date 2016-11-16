@@ -39,7 +39,6 @@ form {
 	padding: 1em;
 	margin: 1em 0 1em;
 	border: 1px solid #cccccc;
-	
 	font-size: 1em;
 }
 
@@ -436,26 +435,56 @@ input[type="checkbox"]:checked + label:after {
 }
 
 #color-builder-form input[type="range"].red::-webkit-slider-runnable-track {
-	background-image: linear-gradient(90deg, #FFFFFF, #FF0000);
+	background: linear-gradient(90deg, #FFFFFF, #FF0000);
+}
+
+#color-builder-form input[type="range"].red::-moz-range-track {
+	background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,0,0,1) 100%);
+}
+
+#color-builder-form input[type="range"].red::-ms-track {
+	background: linear-gradient(90deg, #FFFFFF, #FF0000);
 }
 
 #color-builder-form input[type="range"].green::-webkit-slider-runnable-track {
-	background-image: linear-gradient(
+	background: linear-gradient(
 		to right, 
 		#ffffff, 
 		#00ff00);
 }
+
+#color-builder-form input[type="range"].green::-moz-range-track {
+	background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(0,255,0,1) 100%);
+}
+
+#color-builder-form input[type="range"].green::-ms-track {
+	background: linear-gradient(
+		to right, 
+		#ffffff, 
+		#00ff00);
+}
+
 #color-builder-form input[type="range"].blue::-webkit-slider-runnable-track {
-	background-image: linear-gradient(
+	background: linear-gradient(
 		to right, 
 		#ffffff, 
 		#0000ff);
 }
+
+#color-builder-form input[type="range"].blue::-moz-range-track {
+	background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(0,0,255,1) 100%);
+}
+
+
 #color-builder-form input[type="range"].alpha::-webkit-slider-runnable-track {
 	background-image: linear-gradient(
 		to right, 
 		#ffffff, 
 		#000000);
+}
+
+#color-builder-form input[type="range"].alpha::-moz-range-track {
+	background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%);
 }
 
 #color-builder textarea {
