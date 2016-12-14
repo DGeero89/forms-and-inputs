@@ -5,7 +5,7 @@
 
 	/*
 	*
-	* Checks if input is an email address. 
+	* Checks if input is an email address. An email address consists of two strings combined by an @ symbol.
 	*
 	*/
 
@@ -523,7 +523,7 @@
 				return false;
 			}else {
 
-				for (var i = 0; i < 4; i++){
+				for (i = 0; i < 4; i++){
 					if( !(this.isAlphanumeric(numSplit[i])) ){
 						return false;
 					}
@@ -602,7 +602,7 @@
 
 				for (var i = 0; i < arr.length; i++){
 					if (!(arr[i] >= 0 && arr[i] <= 250)){
-						return false
+						return false;
 					}
 				}
 
@@ -647,7 +647,7 @@
 
 			arr = input.split(",");
 
-			if ( arr.length = 3) {
+			if ( arr.length === 3) {
 
 				hue = arr[0];
 				saturation = arr[1];
@@ -721,5 +721,6 @@
 
 	};
 
+window.validator = validator;
 
 })(window);

@@ -7,8 +7,7 @@
 	<link rel="stylesheet" href="css/form.css">
 	<link href='https://fonts.googleapis.com/css?family=Lato|Raleway:300,400|Roboto:300,400' rel='stylesheet'>
 	<script src="https://use.fontawesome.com/c3e06da910.js"></script>
-	<script src="js/validator.js"></script>
-	<script src="js/color-builder.js"></script>
+	
 </head>
 <body id="color-builder">
 	<div id="header-wrap">
@@ -32,13 +31,13 @@
 					<fieldset class="form-group">
 						<div class="grid_2-1">
 							<label for="red">Red</label>
-							<input type="range" min="0" max="255" step="5" id="red" name="color" class="form-control red">
+							<input type="range" min="0" max="255" step="5" id="red" name="color" class="form-control red" value="0">
 							<label for="green">Green</label>
-							<input type="range" min="0" max="255" step="5" id="green" name="color" class="form-control green">
+							<input type="range" min="0" max="255" step="5" id="green" name="color" class="form-control green" value="0">
 							<label for="blue">Blue</label>
-							<input type="range" min="0" max="255" step="5" id="blue" name="color" class="form-control blue">
+							<input type="range" min="0" max="255" step="5" id="blue" name="color" class="form-control blue" value="0">
 							<label for="blue">Alpha</label>
-							<input type="range" min="0" max="1" step="0.01" id="alpha" name="color" class="form-control alpha">
+							<input type="range" min="0" max="1" step="0.01" id="alpha" name="color" class="form-control alpha" value="0">
 						</div>
 						<div class="grid_2-1">
 							<textarea name="color" id="color" class="form-control" rows="10" readonly></textarea>
@@ -53,5 +52,8 @@
 		<footer>
 		<p>Copyright &copy; 2016</p>
 	</footer>
+
+	<script src="js/validator.js"></script>
+	<script src="js/color-builder.js"></script>
 </body>
 </html>
