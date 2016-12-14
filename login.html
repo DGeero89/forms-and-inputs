@@ -25,12 +25,12 @@
 					<legend>Login</legend>
 					<fieldset class="form-group">	
 						<label for="username" class="login-label">
-						<input type="text" class="form-control" id="username" name="user" placeholder="User" required="">
-							<span><i class="fa fa-user" aria-hidden="true"></i> User ID</span>
+						<input type="text" class="form-control" id="username" name="user" placeholder="User" required minlength="2">
+							<span><i class="fa fa-user" aria-hidden="true"></i> User Name</span>
 						</label>	
 							
 						<label for="password" class="login-label">
-							<input type="password" class="form-control" name="password" id="password" placeholder="*******" required="">
+							<input type="password" class="form-control" name="password" id="password" placeholder="*******" required>
 							<span><i class="fa fa-key" aria-hidden="true"></i> Password</span>
 						</label>
 						
@@ -48,5 +48,7 @@
 		<footer>
 		<p>Copyright &copy; 2016</p>
 	</footer>
+	<script src="js/validator.js"></script>
+	<script src="js/login.js"></script>
 </body>
 </html>

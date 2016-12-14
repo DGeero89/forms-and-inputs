@@ -1,6 +1,6 @@
 (function(){
 
-	var form = document.getElementById("signup-form");
+  var form = document.getElementById("signup-form");
 	var firstNameField = document.getElementById("first-name");
 	var lastNameField = document.getElementById("last-name");
 	var emailField = document.getElementById("email");
@@ -69,7 +69,6 @@
   		var millInDay = 24 * 60 * 60 * 1000;
   		var age = Math.floor( (diffInMill/millInDay)/365 );
 
-  		console.log(age);
   		if ( !validator.isBeforeToday(dob) || !validator.isDate(dob) ) {
   			element.setCustomValidity("Please enter a valid birthday.");
   		} else if ( age < 18){
