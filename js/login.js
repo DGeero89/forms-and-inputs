@@ -1,6 +1,6 @@
 (function (){
-	var userName = document.getElementById("username");
-	var password = document.getElementById("password");
+	var userName = document.getElementById("username"),
+      password = document.getElementById("password");
 
 	function validateName(element) {
 

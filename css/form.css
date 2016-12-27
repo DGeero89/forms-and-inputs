@@ -21,11 +21,13 @@ select:focus
 {
 	outline:0;
 }
-input:invalid {
+input:invalid,
+select:invalid{
   box-shadow: 1px 1px 1px red;
 }
 
-input:valid {
+input:valid,
+select:valid {
 	box-shadow: 1px 1px 1px green;
 }
 .form-wrap {

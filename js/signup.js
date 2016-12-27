@@ -1,12 +1,12 @@
 (function(){
 
-  var form = document.getElementById("signup-form");
-	var firstNameField = document.getElementById("first-name");
-	var lastNameField = document.getElementById("last-name");
-	var emailField = document.getElementById("email");
-	var dobField = document.getElementById("dob");
-	var passwordField = document.getElementById("password");
-	var confirmPassField = document.getElementById("confirm-password");
+  var form = document.getElementById("signup-form"),
+      firstNameField = document.getElementById("first-name"),
+      lastNameField = document.getElementById("last-name"),
+      emailField = document.getElementById("email"),
+      dobField = document.getElementById("dob"),
+      passwordField = document.getElementById("password"),
+      confirmPassField = document.getElementById("confirm-password");
 
 	function validateName(element) {
     
@@ -47,9 +47,8 @@
 
   	function confirmPass(element, field){
 
-  		var pass = element.value;
-  		
-  		var confirmPassword = field.value;
+  		var pass = element.value,
+          confirmPassword = field.value;
 
   		if(pass != confirmPassword){
   			element.setCustomValidity("Passwords don't match.");
@@ -61,13 +60,11 @@
 
   	function validateAge(element){
 
-  		var dob = new Date(element.value);
-  		
-  		var now = new Date(Date.now());
-
-  		var diffInMill = Math.abs(now.getTime() - dob.getTime());
-  		var millInDay = 24 * 60 * 60 * 1000;
-  		var age = Math.floor( (diffInMill/millInDay)/365 );
+  		var dob = new Date(element.value),
+          now = new Date(Date.now()),
+          diffInMill = Math.abs(now.getTime() - dob.getTime()),
+          millInDay = 24 * 60 * 60 * 1000,
+          age = Math.floor( (diffInMill/millInDay)/365 );
 
   		if ( !validator.isBeforeToday(dob) || !validator.isDate(dob) ) {
   			element.setCustomValidity("Please enter a valid birthday.");

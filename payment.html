@@ -9,6 +9,7 @@
 	<script src="https://use.fontawesome.com/c3e06da910.js"></script>
 </head>
 <body id="payment">
+	
 	<div id="header-wrap">
 		<header id="header" class="row clearfix">
 			<nav id="main-nav" role="navigation">
@@ -18,6 +19,7 @@
 				</nav>
 		</header>
 	</div>
+	
 	<div id="main-wrap">
 		<main id="content" class="row">
 			<div class="form-wrap">
@@ -36,22 +38,22 @@
 						<label for="cardNum">Credit Card Number*  <i class="fa fa-cc-visa fa-lg" aria-hidden="true"></i> <i class="fa fa-cc-amex fa-lg" aria-hidden="true"> </i>
  <i class="fa fa-cc-mastercard fa-lg" aria-hidden="true"> </i> <i class="fa fa-cc-discover fa-lg" aria-hidden="true"></i>
 </label>
-						<input type="text" class="form-control" id="cardNum" name="paymentCardNum" placeholder="**** **** **** ****" maxlength="19" required>
+						<input type="text" class="form-control" id="cardNum" name="paymentCardNum" placeholder="**** **** **** ****" minlength="16" maxlength="19" required>
 					</div>
 					<div class="form-group">
 						<div class="grid_3-1">
 							<label for="expirationMonth">Month</label>
-							<select class="form-control" name="paymentExpirationMonth" id="expirationMonth" required>
-								<option disabled selected value> --- </option>
-								<option value="01">01</option>
-								<option value="02">02</option>
-								<option value="03">03</option>
-								<option value="04">04</option>
-								<option value="05">05</option>
-								<option value="06">06</option>
-								<option value="07">07</option>
-								<option value="08">08</option>
-								<option value="09">09</option>
+							<select class="form-control expiration" name="paymentExpirationMonth" id="expirationMonth" required>
+								<option value="0" selected=""> --- </option>
+								<option value="1">01</option>
+								<option value="2">02</option>
+								<option value="3">03</option>
+								<option value="4">04</option>
+								<option value="5">05</option>
+								<option value="6">06</option>
+								<option value="7">07</option>
+								<option value="8">08</option>
+								<option value="9">09</option>
 								<option value="10">10</option>
 								<option value="11">11</option>
 								<option value="12">12</option>
@@ -59,29 +61,30 @@
 						</div>
 						<div class="grid_3-1">
 							<label for="expirationYear">Year*</label>
-							<select class="form-control" name="paymentExpirationYear" id="expirationYear" required>
-								<option disabled selected value> --- </option>
+							<select class="form-control expiration" name="paymentExpirationYear" id="expirationYear" required>
+								<option value="0" selected=""> --- </option>
+								<option value="2015">2015</option>
 								<option value="2016">2016</option>
-						    	<option value="2017">2017</option>
-						    	<option value="2018">2018</option>
-						    	<option value="2019">2019</option>
-						    	<option value="2020">2020</option>
-						    	<option value="2021">2021</option>
-						    	<option value="2022">2022</option>
-						    	<option value="2023">2023</option>
-						    	<option value="2024">2024</option>
-						    	<option value="2025">2025</option>
-						    	<option value="2026">2026</option>
-						    	<option value="2027">2027</option>
-						    	<option value="2028">2028</option>
-						    	<option value="2029">2029</option>
-						    	<option value="2030">2030</option>
-						    	<option value="2031">2031</option>
+						    <option value="2017">2017</option>
+						    <option value="2018">2018</option>
+						    <option value="2019">2019</option>
+						    <option value="2020">2020</option>
+						    <option value="2021">2021</option>
+						    <option value="2022">2022</option>
+						    <option value="2023">2023</option>
+						    <option value="2024">2024</option>
+						    <option value="2025">2025</option>
+						    <option value="2026">2026</option>
+						    <option value="2027">2027</option>
+						    <option value="2028">2028</option>
+						    <option value="2029">2029</option>
+						    <option value="2030">2030</option>
+						   	<option value="2031">2031</option>
 							</select>
 						</div>
 						<div class="grid_3-1">
-							<label for="csv">CSV</label>
-							<input type="text" class="form-control" id="csv" name="paymentCSV" placeholder="***" required>
+							<label for="csv">CSV*</label>
+							<input type="text" class="form-control" id="csv" name="paymentCSV" placeholder="***" required minlength="3" maxlength="4">
 						</div>
 						</div>
 					<button type="submit" class="button button-lg button-blue">Pay Now</button>
@@ -94,5 +97,7 @@
 		<footer>
 		<p>Copyright &copy; 2016</p>
 	</footer>
+	<script src="js/validator.js"></script>
+	<script src="js/payment.js"></script>
 </body>
 </html>

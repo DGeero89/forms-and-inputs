@@ -43,10 +43,12 @@
 
 							  	<label for="other">
 							    	<input type="radio" value="other"  name="team" id="other" > <span>Other</span>
+							    	<!--<label for="email">Phone*</label>-->
+										<input type="text" class="form-control" name="otherAnswer" id="otherAnswer" disabled>
 							  	</label>
 
 							</fieldset>						  
-						<button type="submit" class="button button-lg button-green">Submit Answer</button>
+						<button type="submit" class="button button-lg button-green submit" disabled>Submit Answer</button>
 					</form>
 				</div>
 			</div>
@@ -55,6 +57,9 @@
 	<div id="footer-wrap">
 		<footer>
 		<p>Copyright &copy; 2016</p>
-	</footer>
+		</footer>
+	</div>
+<script src="js/validator.js"></script>
+<script src="js/questionaire.js"></script>
 </body>
 </html>

@@ -39,8 +39,9 @@ a {
 }
 
 .button:hover,
-.button:active{
-	background: #1;
+.button:active,
+.button:disabled{
+	background: #ccc;
 	box-shadow: none;
     -webkit-transform: translateY(2px);
     -ms-transform: translateY(2px);
@@ -74,6 +75,10 @@ a {
 
 .button-green:hover {
 	background: #63A873;
+}
+
+.button-green:disabled {
+	background: #ccc;
 }
 
 .button-blue {

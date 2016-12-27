@@ -358,7 +358,7 @@
 
 	validator.isLength = function (input, n){
 
-		if (!input || typeof n !== 'string') {
+		if (!input) {
 			throw "Please enter two valid arguments.";
 	  	} 
 
@@ -374,7 +374,7 @@
 
 	validator.isOfLength = function (input, n){
 
-		if (!input || typeof n !== 'string') {
+		if (!input) {
 			throw "Please enter two valid arguments.";
 	  	} 
 
@@ -397,7 +397,6 @@
           throw "Please enter a valid input.";
         }
 
-        var substitute;
 		var i = 0;
 		var length = input.length;
 
