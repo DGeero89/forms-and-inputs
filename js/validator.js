@@ -27,7 +27,7 @@
 		if (arr.length === 2 && domain.length === 2 && domain[0].length > 0){
 			isEmail = true;
 		}
-        console.log(isEmail);
+        
 		return isEmail;
       
 
@@ -42,33 +42,40 @@
 	validator.isPhoneNumber = function(input){
 
 		//Check if there is input and if length of input matches possible USA phone number length
-		if(input === undefined || !input || !(input.length === 12 || input.length === 10)){
+		if(input === undefined || !input ){
 			throw "Please enter a valid phone number.";
 		}
       
-   		//Declare variables
-   		var phoneNum = [],
+   	//Declare variables
+   	var phoneNum = [],
    			isPhoneNum = false;
 
-   		//Check that dash marks are only symbols used if length is 12
-   		if(input.length === 12 && (input[3] !== "-" || input[7] !== "-")){
-   			return isPhoneNum;
-   		}
+   	//Check validity if length is 13 (541)-111-2222
+   	if(input.length === 13 && (input[0] !== '(' || input[4] !== ')' || input[8] !== '-' )) {
+   		return isPhoneNum;
+   	}
+
+   	//Check that dash marks are only symbols used if length is 12
+   	if(input.length === 12 && (input[3] !== "-" || input[7] !== "-")){
+   		return isPhoneNum;
+   	}
       
-        //Loop over input and push valid numbers to phoneNum array
-        for(var i = 0; i < input.length; i++){
-        	if(Number(input[i])){
-          		phoneNum.push(input[i]);
-        	}
-      	}
+    //Loop over input and push valid numbers to phoneNum array
+    for(var i = 0; i < input.length; i++){
+      if(Number(input[i])){
+        phoneNum.push(input[i]);
+      }
+    }
       
-      	//Check if length is 10 and is valid phone number. Return true or false
-      	if(phoneNum.length === 10){
-        	isPhoneNum = true;
-        	return isPhoneNum;
-      	}else{
-        	return isPhoneNum;
-      	}
+    //Check if length is 10 and is valid phone number. Return true or false
+    if(phoneNum.length === 10){
+    	isPhoneNum = true;
+      return isPhoneNum;
+    } else {
+    	return isPhoneNum;
+    }
+
+    return isPhoneNum;
       
 	};
 
