@@ -20,7 +20,8 @@
 			billingAddress = billingFieldset.querySelector('#address'),
 			billingCountry = billingFieldset.querySelector('#country'),
 			billingCity = billingFieldset.querySelector('#city'),
-			billingZip = billingFieldset.querySelector('#zip');
+			billingZip = billingFieldset.querySelector('#zip'),
+			submit = form.querySelector('.submit');
 	
 
 
@@ -159,6 +160,10 @@
 
 	checkbox.addEventListener('change', function(){
 		useForBilling(this);
+	});
+
+	submit.addEventListener('submit', function(e){
+		e.preventDefault();
 	});
 
 
