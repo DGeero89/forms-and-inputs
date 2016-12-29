@@ -35,6 +35,38 @@
 
 	/*
 	*
+	* Checks if input is a valid address
+	*
+	*/
+
+	validator.isAddress = function(input){
+
+		if(!input){
+			throw "Please enter a valid address.";
+		}
+
+		var address = input.split(' '),
+				length = address.length,
+				streetNumber = input[0],
+				streetName = "",
+				numberLength = streetNumber.length,
+				isAnAddress;
+
+		for(var i = 1; i < length; i++){
+			streetName += address[i] + " ";
+		}
+
+		if( length >= 2 && Number(streetNumber) && streetName.length > 2 && !(Number(streetName)) ){
+			isAnAddress = true;
+		} else {
+			isAnAddress = false;
+		}
+
+		return isAnAddress;
+	};
+
+	/*
+	*
 	* Checks if the input parameter is a valid phone number for your country.
 	*
 	*/

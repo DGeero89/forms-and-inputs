@@ -69,7 +69,7 @@
   			time = value.split(':'),
   			hours = time[0].trim(),
   			min = time[1];
-  	console.log(value);
+
   	if (hours < 8 || hours > 17){
   		element.setCustomValidity("Please enter a time during business hours (8am to 5pm).");
   	} else {

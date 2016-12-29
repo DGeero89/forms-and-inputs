@@ -26,36 +26,36 @@
 					Shipping and Billing Info 
 				</h1>
 				</div>
-				<form action="" method="POST" role="form" id="signup-form">
-					<fieldset class="form-group">	
+				<form action="" method="POST" role="form" id="shipping-billing">
+					<fieldset class="form-group" id="shipping">	
 						<legend>Shipping <i class="fa fa-truck" aria-hidden="true"></i>
 </legend>
 						<div class="form-group clearfix">
 							<div class="grid_2-1">
 								<label for="first_name">First Name*</label>
-								<input type="text" class="form-control" id="first_name" name="first_name" placeholder="Luke" required>
+								<input type="text" class="form-control name" id="firstName" name="firstName" placeholder="Luke" required minlength="2">
 							</div>
 							<div class="grid_2-1">
 								<label for="last_name">Last Name*</label>
-								<input type="text" class="form-control" id="last_name" name="last_name" placeholder="Skywalker" required>
+								<input type="text" class="form-control name" id="lastName" name="lastName" placeholder="Skywalker" required minlength="2">
 							</div>
 						</div>	
 							
 						<label for="address">Address*</label>
-						<input type="text" class="form-control" id="address" name="address" placeholder="111 Missing Planet Dr." required>
+						<input type="text" class="form-control address" id="address" name="address" placeholder="111 Missing Planet Dr." required>
 						
 						<div class="form-group clearfix">
 							<div class="grid_3-1">
 								<label for="country">Country*</label>
-								<input type="text" class="form-control" id="country" name="country" placeholder="Your Country..." required>
+								<input type="text" class="form-control country" id="country" name="country" placeholder="Your Country..." required minlength="4">
 							</div>
 							<div class="grid_3-1">
 								<label for="city">City*</label>
-								<input type="text" class="form-control" id="city" name="city" placeholder="Your City..." required>
+								<input type="text" class="form-control city" id="city" name="city" placeholder="Your City..." required minlength="2">
 							</div>
 							<div class="grid_3-1">
 								<label for="zip">Zip Code*</label>
-								<input type="text" class="form-control" id="zip" name="zip" placeholder="Your Zip..." required>
+								<input type="text" class="form-control zip" id="zip" name="zip" placeholder="Your Zip..." required minlength="5">
 							</div>
 						</div>
 						<div class="clearfix">
@@ -64,35 +64,35 @@
 						</div>	
 					</fieldset>
 					
-					<fieldset class="form-group">	
+					<fieldset class="form-group" id="billing">	
 						<legend>Billing <i class="fa fa-credit-card" aria-hidden="true"></i>
 </legend>
 						<div class="form-group clearfix">
 							<div class="grid_2-1">
 								<label for="first_name">First Name*</label>
-								<input type="text" class="form-control" id="first_name" name="first_name" placeholder="Luke" required>
+								<input type="text" class="form-control name" id="firstName" name="firstName" placeholder="Luke" required minlength="2">
 							</div>
 							<div class="grid_2-1">
 								<label for="last_name">Last Name*</label>
-								<input type="text" class="form-control" id="last_name" name="last_name" placeholder="Skywalker" required>
+								<input type="text" class="form-control name" id="lastName" name="lastName" placeholder="Skywalker" required minlength="2">
 							</div>
 						</div>	
 							
 						<label for="address">Address*</label>
-						<input type="text" class="form-control" id="address" name="address" placeholder="111 Missing Planet Dr." required>
+						<input type="text" class="form-control address" id="address" name="address" placeholder="111 Missing Planet Dr." required>
 						
 						<div class="form-group clearfix">
 							<div class="grid_3-1">
 								<label for="country">Country*</label>
-								<input type="text" class="form-control" id="country" name="country" placeholder="Your Country..." required>
+								<input type="text" class="form-control country" id="country" name="country" placeholder="Your Country..." required minlength="4">
 							</div>
 							<div class="grid_3-1">
 								<label for="city">City*</label>
-								<input type="text" class="form-control" id="city" name="city" placeholder="Your City..." required>
+								<input type="text" class="form-control city" id="city" name="city" placeholder="Your City..." required minlength="2">
 							</div>
 							<div class="grid_3-1">
 								<label for="zip">Zip Code*</label>
-								<input type="text" class="form-control" id="zip" name="zip" placeholder="Your Zip..." required>
+								<input type="text" class="form-control zip" id="zip" name="zip" placeholder="Your Zip..." required minlength="5">
 							</div>
 						</div>	
 					</fieldset>
@@ -104,5 +104,7 @@
 		<footer>
 		<p>Copyright &copy; 2016</p>
 	</footer>
+<script src="js/validator.js"></script>
+<script src="js/billing.js"></script>	
 </body>
 </html>
